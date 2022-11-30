@@ -1,0 +1,37 @@
+@use "../../styles/Variables" as *;
+
+.header {
+  background-color: $secondaryColor;
+  color: $primaryColor;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+
+  &__title {
+    padding: 20px;
+    font-size: 2em;
+  }
+  &__nav {
+    padding: 30px;
+    font-size: 1.5em;
+  }
+  &__navLink {
+    text-decoration: none;
+    color: $primaryColor;
+    padding: 5px;
+  }
+  &__navLink:hover {
+    background-color: $primaryColor;
+    color: $secondaryColor;
+  }
+  // &__navLink:after {
+  //   content: ' | ';
+  // }
+}
+@media only screen and (min-width: 400px) {
+  .header {
+    flex-direction: row;
+  }
+}
