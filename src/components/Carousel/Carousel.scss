@@ -1,0 +1,16 @@
+@use "../../styles/Variables.scss" as *;
+
+.carousel{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &__arrow{
+        font-size: 2em;
+        padding: 1em;
+    }
+    &__image{
+        width: 80%;
+        border: 0.2em solid $secondaryColor;
+    }
+}

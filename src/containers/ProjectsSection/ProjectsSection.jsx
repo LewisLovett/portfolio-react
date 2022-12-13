@@ -7,7 +7,7 @@ const ProjectsSection = (props) => {
   const [isModalShown,setIsModalShown] = useState(false);
   const [projectDetails, setProjectDetails] = useState({
     title: "",
-    image: "",
+    images: [],
     skills:[],
     description:"",
     link:"profile.jpg",
@@ -21,7 +21,7 @@ const ProjectsSection = (props) => {
       case "project1":
         setProjectDetails({
           title: "Calculator",
-          image: "calculator.png",
+          images: ["calculator.png","word-guesser.png","calculator.png"],
           skills:["HTML","SCSS","JavaScript"],
           description:"This is my calculator project. The languages used are HTML, SCSS and JavaScript. This calculator can handle multiple number inputs, carry out division, multiplication, addition and subtraction. It also allows the user to input decimal, positive, negative numbers and can convert numbers into percentages.",
           projectLink:"https://lewislovett.github.io/calculator/",
@@ -31,7 +31,7 @@ const ProjectsSection = (props) => {
         case "project2":
           setProjectDetails({
             title: "Word Guesser",
-            image: "word-guesser.png",
+            images: ["word-guesser.png","word-guesser.png","word-guesser.png"],
             skills:["HTML","SCSS","JavaScript"],
             description:"This is my word guesser project. The languages used are HTML, SCSS and JavaScript. It also uses a random word and definition api. When the start button is pressed the countdown time starts and a scrambled word and definition in outputted. The user must guess what the original word is before the computer guesses the word. The game ends when the time runs out or either the user or computer gets a score of 10.",
             projectLink:"https://lewislovett.github.io/word_guesser/",
@@ -41,7 +41,7 @@ const ProjectsSection = (props) => {
           case "project3":
             setProjectDetails({
               title: "Morser Code",
-              image: "morse-code.png",
+              images: ["morse-code.png","morse-code.png","morse-code.png"],
               skills:["HTML","SCSS","JavaScript"],
               description:"This is my morse code project.",
               projectLink:"https://lewislovett.github.io/word_guesser/",
@@ -58,7 +58,7 @@ const ProjectsSection = (props) => {
   
     return(
         <section id="portfolio" class="section section--secondaryBackground">
-        {isModalShown && <Modal setShown={closeModal} title={projectDetails.title} image={projectDetails.image} skills={projectDetails.skills} description ={projectDetails.description} projectLink={projectDetails.projectLink} repoLink={projectDetails.repoLink}/>} 
+        {isModalShown && <Modal setShown={closeModal} title={projectDetails.title} images={projectDetails.images} skills={projectDetails.skills} description ={projectDetails.description} projectLink={projectDetails.projectLink} repoLink={projectDetails.repoLink}/>} 
         <h1 class="section__sectionHeader">Portfolio</h1>
         <div class="section__portfolioContainer">
           <article class="section__projectCard" onClick={(e) => showProjectModal("project1", e)}>
