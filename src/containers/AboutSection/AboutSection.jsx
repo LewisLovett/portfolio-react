@@ -1,8 +1,8 @@
 import "../../styles/Section.scss"
-import "./About.scss";
+import "./AboutSection.scss";
 
 
-const About = (props) => {
+const AboutSection = (props) => {
     return(
     <section id="about" class="section section--primaryBackground">
         <h1 class="section__sectionHeader">About</h1>
@@ -11,4 +11,4 @@ const About = (props) => {
 
     )
 }
-export default About;
+export default AboutSection;

@@ -1,8 +1,8 @@
 import "../../styles/Section.scss"
-import "./Projects.scss";
+import "./ProjectsSection.scss";
 
 
-const Projects = (props) => {
+const ProjectsSection = (props) => {
     return(
         <section id="portfolio" class="section section--secondaryBackground">
         <h1 class="section__sectionHeader">Portfolio</h1>
@@ -29,4 +29,4 @@ const Projects = (props) => {
       </section>
     )
 }
-export default Projects;
+export default ProjectsSection;

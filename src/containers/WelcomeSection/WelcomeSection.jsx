@@ -1,8 +1,8 @@
 import "../../styles/Section.scss"
-import "./Welcome.scss";
+import "./WelcomeSection.scss";
 import profileImg from "../../assets/images/profile.jpg"
 
-const Welcome = (props) => {
+const WelcomeSection = (props) => {
     return(
         <section id="landingSection" class="section section--primaryBackground">
         <h1 class="section__myName">Lewis Lovett</h1>
@@ -11,4 +11,4 @@ const Welcome = (props) => {
       </section>
     )
 }
-export default Welcome;
+export default WelcomeSection;

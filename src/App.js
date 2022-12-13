@@ -1,22 +1,22 @@
 import './App.css';
-import Navbar from './components/Navbar/Navbar';
-import Welcome from './components/Welcome/Welcome';
-import Projects from './components/Projects/Projects';
-import Skills from './components/Skills/Skills';
-import Experience from './components/Experience/Experience';
-import About from './components/About/About';
-import Contact from './components/Contact/Contact';
+import Navbar from './containers/Navbar/Navbar';
+import WelcomeSection from './containers/WelcomeSection/WelcomeSection';
+import ProjectsSection from './containers/ProjectsSection/ProjectsSection';
+import SkillsSection from './containers/SkillsSection/SkillsSection';
+import ExperienceSection from './containers/ExperienceSection/ExperienceSection';
+import AboutSection from './containers/AboutSection/AboutSection';
+import ContactSection from './containers/ContactSection/ContactSection';
 
 function App() {
   return (
     <main>
       <Navbar/>
-      <Welcome/>
-      <Projects/>
-      <Skills/>
-      <Experience/>
-      <About/>
-      <Contact/>
+      <WelcomeSection/>
+      <ProjectsSection/>
+      <SkillsSection/>
+      <ExperienceSection/>
+      <AboutSection/>
+      <ContactSection/>
     </main>
   );
 }

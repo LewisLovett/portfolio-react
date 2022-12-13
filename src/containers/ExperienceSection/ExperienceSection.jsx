@@ -1,8 +1,8 @@
 import "../../styles/Section.scss"
-import "./Experience.scss";
+import "./ExperienceSection.scss";
 
 
-const Experience = (props) => {
+const ExperienceSection = (props) => {
     return(
         <section id="experience" class="section section--secondaryBackground">
         <h1 class="section__sectionHeader">Experience</h1>
@@ -53,4 +53,4 @@ const Experience = (props) => {
       </section>
     )
 }
-export default Experience;
+export default ExperienceSection;

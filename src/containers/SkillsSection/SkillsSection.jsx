@@ -1,8 +1,8 @@
 import "../../styles/Section.scss"
-import "./Skills.scss";
+import "./SkillsSection.scss";
 
 
-const Skills = (props) => {
+const SkillsSection = (props) => {
     return(
         <section id="skills" class="section section--primaryBackground">
         <h1 class="section__sectionHeader">Skills</h1>
@@ -18,4 +18,4 @@ const Skills = (props) => {
       </section>
     )
 }
-export default Skills;
+export default SkillsSection;

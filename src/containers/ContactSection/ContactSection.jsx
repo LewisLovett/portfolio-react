@@ -1,8 +1,8 @@
 import "../../styles/Section.scss"
-import "./Contact.scss";
+import "./ContactSection.scss";
 
 
-const Contact = (props) => {
+const ContactSection = (props) => {
     return(
         <footer>
         <section id="contact" class="section section--secondaryBackground">
@@ -15,4 +15,4 @@ const Contact = (props) => {
       </footer>
     )
 }
-export default Contact;
+export default ContactSection;
