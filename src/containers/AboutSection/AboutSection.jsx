@@ -6,7 +6,10 @@ const AboutSection = (props) => {
     return(
     <section id="about" class="section section--primaryBackground">
         <h1 class="section__sectionHeader">About</h1>
-        <p class="section__aboutParagraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque tenetur incidunt officiis, inventore magnam, vitae totam deleniti ipsa, hic sunt nam laudantium praesentium! Consequuntur laudantium blanditiis corporis quos architecto aperiam!</p>
+        <p class="section__aboutParagraph">Junior software engineer with a first class degree in Computer Science having recently expanded
+my computer language skillsets through a web developer courses provided by _nology and
+freelance work.<br/><br/>
+I am versatile, dedicated, eager to learn, and available for immediate employment.</p>
       </section>
 
     )

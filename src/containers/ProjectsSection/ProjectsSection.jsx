@@ -21,7 +21,7 @@ const ProjectsSection = (props) => {
       case "project1":
         setProjectDetails({
           title: "Calculator",
-          images: ["calculator.png","word-guesser.png","calculator.png"],
+          images: ["calculator1.png","calculator2.png","calculator3.png"],
           skills:["HTML","SCSS","JavaScript"],
           description:"This is my calculator project. The languages used are HTML, SCSS and JavaScript. This calculator can handle multiple number inputs, carry out division, multiplication, addition and subtraction. It also allows the user to input decimal, positive, negative numbers and can convert numbers into percentages.",
           projectLink:"https://lewislovett.github.io/calculator/",
@@ -63,7 +63,7 @@ const ProjectsSection = (props) => {
         <div class="section__portfolioContainer">
           <article class="section__projectCard" onClick={(e) => showProjectModal("project1", e)}>
             <h2>Calculator</h2>
-            <img class="section__projectImage" alt="Project 1 image" src={require("../../assets/images/calculator.png" )}/>
+            <img class="section__projectImage" alt="Project 1 image" src={require("../../assets/images/calculator1.png" )}/>
           </article>
           <article class="section__projectCard" onClick={(e) => showProjectModal("project2", e)}>
             <h2>Word Guesser</h2>

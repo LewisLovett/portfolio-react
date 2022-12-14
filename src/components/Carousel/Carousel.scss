@@ -3,14 +3,37 @@
 .carousel{
     display: flex;
     align-items: center;
-    cursor: pointer;
+    justify-content: center;
+    
 
     &__arrow{
-        font-size: 2em;
-        padding: 1em;
+        display: none;
     }
     &__image{
-        width: 80%;
+        width: 100%;
         border: 0.2em solid $secondaryColor;
+    }
+
+    &__buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    &__button{
+        font-size: 1.5em;
+        padding: 0.1em 1em;
+        cursor: pointer;
+    }
+}
+@media only screen and (min-width:810px) {
+    .carousel{
+        &__arrow{
+            display: block;
+            font-size: 2em;
+            padding: 1em;
+            cursor: pointer;
+        }
+
     }
 }
